@@ -33,6 +33,9 @@ dependencies {
 }
 test {
     finalizedBy jacocoTestReport
+    reports {
+        xml.enabled true
+    }
 }
 jacocoTestReport {
     dependsOn test
