@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class SpringBootHelloWorldApplication {
+public class SpringBootHelloWorldApplication  extends SpringBootServletInitializer{
 
 	
 	
@@ -15,7 +15,7 @@ public class SpringBootHelloWorldApplication {
 	}
 	
 	
-
+@Override
  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
   return application.sources(SpringBootHelloWorldApplication.class);
  }
