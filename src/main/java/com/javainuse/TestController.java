@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.javainuse.model.Employee;
 
-@Controller
+@RestController
 public class TestController {
 
-	@GetMapping(value = "/employee", method = RequestMethod.GET)
+	@RequestMapping(value = "/employee", method = RequestMethod.GET)
 	public Employee firstPage() {
 
 		Employee emp = new Employee();
