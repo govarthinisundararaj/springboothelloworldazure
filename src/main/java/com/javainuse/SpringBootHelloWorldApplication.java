@@ -15,7 +15,7 @@ public class SpringBootHelloWorldApplication {
 	}
 	
 	
-	 @Override
+
  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
   return application.sources(SpringBootHelloWorldApplication.class);
  }
